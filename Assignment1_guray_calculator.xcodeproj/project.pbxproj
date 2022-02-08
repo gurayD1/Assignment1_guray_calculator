@@ -13,6 +13,8 @@
 		CA6C261827B1D44D001ECA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6C261627B1D44D001ECA6B /* Main.storyboard */; };
 		CA6C261A27B1D451001ECA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6C261927B1D451001ECA6B /* Assets.xcassets */; };
 		CA6C261D27B1D451001ECA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6C261B27B1D451001ECA6B /* LaunchScreen.storyboard */; };
+		CA6C262527B1F6BB001ECA6B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C262427B1F6BB001ECA6B /* Calculator.swift */; };
+		CA6C262727B2FF0F001ECA6B /* CalculatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6C262627B2FF0F001ECA6B /* CalculatorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CA6C261927B1D451001ECA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6C261C27B1D451001ECA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA6C261E27B1D451001ECA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6C262427B1F6BB001ECA6B /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		CA6C262627B2FF0F001ECA6B /* CalculatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CA6C261927B1D451001ECA6B /* Assets.xcassets */,
 				CA6C261B27B1D451001ECA6B /* LaunchScreen.storyboard */,
 				CA6C261E27B1D451001ECA6B /* Info.plist */,
+				CA6C262427B1F6BB001ECA6B /* Calculator.swift */,
+				CA6C262627B2FF0F001ECA6B /* CalculatorManager.swift */,
 			);
 			path = Assignment1_guray_calculator;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA6C261527B1D44D001ECA6B /* ViewController.swift in Sources */,
+				CA6C262527B1F6BB001ECA6B /* Calculator.swift in Sources */,
+				CA6C262727B2FF0F001ECA6B /* CalculatorManager.swift in Sources */,
 				CA6C261127B1D44D001ECA6B /* AppDelegate.swift in Sources */,
 				CA6C261327B1D44D001ECA6B /* SceneDelegate.swift in Sources */,
 			);

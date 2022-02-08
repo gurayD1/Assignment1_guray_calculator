@@ -10,10 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var calc1 : Calculator?
+    var manager1 : CalculatorManager?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        calc1 = Calculator()
+        manager1 = CalculatorManager()
+        
         return true
     }
 
