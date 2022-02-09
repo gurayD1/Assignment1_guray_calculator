@@ -9,24 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // outler for button created
+    // outlet for advance button
     @IBOutlet weak var advanceButton: UIButton!
-    // outlet for label created
+    // outlet for label section
     @IBOutlet weak var inputSection: UILabel!
     // calculator object
     var calc : Calculator?
     //calculator manager object
     var manager : CalculatorManager?
-    // variable for button titles
+    // variable to collect buttons title
     var buttonTitle : String = ""
-    // bool variable for advance mode
+    // bool variable for advance mode active or not
     var isAdvanceMode : Bool = false
-    // C button boolean variable
+    // C button  if pressed boolean variable
     var isCPressed : Bool = true;
-    // outlet for text view
+    // outlet for text view multiple line
     @IBOutlet weak var multipleText: UITextView!
     
-    // button clicked action function
+    // all buttons except advance button clicked action function
     @IBAction func buttonClicked(_ sender: Any) {
         
         // find which button clicked
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         }
         // if "=" button clicked
         if(buttonTitle == "="){
-            // if "C" button cliked
+            // if "C" button pressed already
             if isCPressed{
                 // send the '=' symbol to the array
             calc?.push(s: buttonTitle)
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                 if valid1{
                 // calculate the input
              calc?.calc();
-            // get the final result and send to the label
+            // get the final string and send it to the label
             inputSection.text =  calc?.createString()
             // if advance mode active
             if isAdvanceMode{
@@ -63,10 +63,12 @@ class ViewController: UIViewController {
             }
                 // make the "C" press variable disable
                 isCPressed = false;
-                
+               
             }
                 // if input is not valid
                 else{
+                    // user needs to click on C button
+                    isCPressed = false;
                     // change the label to invalid
                     inputSection.text = "invalid"
                     multipleText.text = "invalid"
@@ -76,6 +78,7 @@ class ViewController: UIViewController {
         }
         // if user press on the "C" button
         else if (buttonTitle == "C"){
+            // make the variable true
             isCPressed = true;
             // create new Calculator object
             calc = Calculator()
